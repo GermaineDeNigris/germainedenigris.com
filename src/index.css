@@ -559,20 +559,24 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 1200px) {
+  .skills-list {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    justify-content: center;
+  }
+  
   .skill {
     background: var(--white);
     color: var(--brick);
-    padding: 1.5% 4%;
+    padding: 3% 6%;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-align: center;
     border: var(--grey) solid 4px;
     border-radius: 2px;
-  }
-
-  .skill-list {
-    margin-top: -300px;
   }
 }
 
