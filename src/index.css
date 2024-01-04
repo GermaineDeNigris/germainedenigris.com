@@ -62,7 +62,6 @@ textarea {
 #unique-header{
   color: var(--black);
   margin-top: -6rem;
-  margin-bottom: 1rem;
   width: 100vw; 
   font-family: 'Montserrat', sans-serif;
   font-size: 16.9vw ;
@@ -404,7 +403,7 @@ textarea {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   grid-gap: 30px;
-  margin: 30px;
+  margin: 10px 20px 50px 20px; 
 }
 
 .grid-item {
