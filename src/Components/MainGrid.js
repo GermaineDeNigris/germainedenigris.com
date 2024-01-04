@@ -17,7 +17,7 @@ function MainGrid() {
 };
 
   return (
-    <div className="grid-container" id="top">
+    <div className="grid-container" >
 
     {/* grid item 1 */}
     <div className="grid-item" id="about">
@@ -39,7 +39,7 @@ function MainGrid() {
     {/* grid item 3 */}
     <div className="grid-item skills">
       <div className="grid-text-content">
-      <h2 >My Skills</h2>
+      <h2>My Skills</h2>
       <div className="skills-list">
         <span className="skill">HTML</span>
         <span className="skill">CSS</span>
@@ -53,7 +53,6 @@ function MainGrid() {
         <span className="skill">JQuery</span>
         <span className="skill">PostgreSQL</span>
         <span className="skill">Web3</span>
-        <span className="skill">DApps</span>
         </div>
       </div>
   </div>

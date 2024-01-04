@@ -69,6 +69,7 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
+  font-weight: bold;
 }
 @media only screen and (max-width: 56.25em) {
   #unique-header {
@@ -121,8 +122,9 @@ textarea {
   text-align: center;
   max-width: 100%;
   margin: auto;
-  background-color: rgb(227, 226, 226);
+  background-color: rgb(231, 232, 231);
   padding-top: 2%;
+  padding-bottom: 3%;
  }
 
 .project-info{
@@ -140,7 +142,6 @@ textarea {
 
 .project-info>p{
   font-size: 2em;
-  font-weight: 500;
   margin-bottom: 5rem;
 }
 
@@ -149,7 +150,7 @@ textarea {
   font-size: 6vw;
   line-height: 80%;
   font-family: 'Montserrat', sans-serif;
-  margin: 5rem auto 2rem auto;
+  margin: 8rem auto 2rem auto;
   text-transform: uppercase;
 }
 
@@ -163,8 +164,8 @@ textarea {
 .project-overview>p {
   width: 80%;
   font-size: 1.94em;
-  font-weight: 500;
-  margin: .25rem auto 3rem auto;
+  letter-spacing: .25px;
+  margin: 1rem auto 3rem auto;
   text-transform: uppercase;
   
 }
@@ -173,7 +174,6 @@ textarea {
   max-width: 80%;
   height: auto;
   margin: 2rem;
-  border: var(--white) solid 5px;
 }
 
 .project-links{
@@ -213,7 +213,7 @@ textarea {
   }
   
   .skills-list > li {
-    margin: -15px auto 3vh 0px;
+    margin: auto auto 3vh 0px;
     text-align: center;
     font-size: 2rem; 
     width: 18%; 
@@ -229,16 +229,20 @@ textarea {
       text-align: left;
     }
     .project-overview>h1 {
-      margin-top: 15vh;
-      font-size: 8.5vw;
-      line-height: normal;
+      margin-top: 10vh;
+      font-size: 10vw;
+      line-height: 4.5vh;
+    }
+
+    .project-info>h2 {
+      line-height: 4.5vh;
     }
     .project-details>img {
-      max-width: 90%;
+      max-width: 100%;
     }
     .code-button, .live-button {
       padding: 5% 10%;
-      margin: auto auto 4em auto;
+      margin: auto .5em 4em auto;
     };
     .skills-list {
       display: flex;
@@ -246,73 +250,107 @@ textarea {
     }
     .skills-list > li {
       min-width: 300px;
-      margin: auto auto 3vh auto;
+      margin: auto auto 2vh auto;
+      padding: 13px 10px;
+    }
+
+    .project-details>img {
+      max-width: 90%;
+      height: auto;
+      margin: 2rem auto 0rem auto;
     }
 
 }
 /*---------------------------- Header ---------------------------*/
    
-.header__link {
-  cursor: pointer;
-}
-
-
 .header {
   text-align: center;
   font-family: 'Poppins', sans-serif;
   position: fixed;
-  width: 100vw;
+  top: 0; /* This ensures it sticks to the top */
+  left: 0; /* Align to the left of the viewport */
+  width: 100%; /* Use 100% rather than 100vw to avoid scrollbar issues */
   z-index: 1000;
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
- }
+}
 
- .header__links {
+.header__links {
   display: flex;
+}
 
- }
+.header__link {
+  padding: 0.5rem 12rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 800;
+  cursor: pointer;
+}
 
+.header__link-wrapper.tan {
+  background: rgb(197, 196, 152);
+}
+
+.header__link-wrapper.tan .header__link {
+  color: rgb(109, 55, 46);
+}
+
+.header__link-wrapper.tan .header__link:hover {
+  color: #fff;
+}
+
+.header__link-wrapper.orange {
+  background: rgb(206, 111, 9);
+}
+
+.header__link-wrapper.orange .header__link {
+  color: rgb(39, 34, 41);
+}
+
+.header__link-wrapper.orange .header__link:hover {
+  color: #fff;
+}
+
+.header__link-wrapper.brick {
+  background: rgb(109, 55, 46);
+}
+
+.header__link-wrapper.brick .header__link {
+  color: rgb(210, 119, 22);
+}
+
+.header__link-wrapper.brick .header__link:hover {
+  color: #fff;
+}
+
+.header__link-wrapper.eggplant {
+  background: rgb(39, 34, 41);
+}
+
+.header__link-wrapper.eggplant .header__link {
+  color: rgb(197, 196, 152);
+}
+
+.header__link-wrapper.eggplant .header__link:hover {
+  color: #fff;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 56.25em) {
   .header__link {
-    padding: .5rem 12rem;
-    display: inline-block;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 800;
-    }
+    padding: 3rem 1.8rem;
+    font-size: 1.5rem;
+  }
+}
 
+@media only screen and (max-width: 37.5em) {
+  .header__link {
+    padding: 2rem 1rem;
+    font-size: 1.3rem;
+  }
+}
 
-  .header__link-wrapper.tan {
-    background: rgb(197, 196, 152); }
-    .header__link-wrapper.tan .header__link {
-      color: rgb(109, 55, 46); }
-    .header__link-wrapper.tan .header__link:hover {
-      color:#fff;  }
-
-   .header__link-wrapper.orange {
-    background: rgb(206, 111, 9); }
-    .header__link-wrapper.orange .header__link {
-      color: rgb(39, 34, 41); }
-    .header__link-wrapper.orange .header__link:hover {
-      color:#fff; }
-
-  .header__link-wrapper.brick {
-        background: rgb(109, 55, 46); }
-    .header__link-wrapper.brick .header__link {
-       color: rgb(210, 119, 22); }
-     .header__link-wrapper.brick .header__link:hover {
-       color:#fff; }
-
-  .header__link-wrapper.eggplant {
-      background: rgb(39, 34, 41); }
-  .header__link-wrapper.eggplant .header__link {
-     color: rgb(197, 196, 152); }
-    .header__link-wrapper.eggplant .header__link:hover {
-     color:#fff; }
-  
-    @media only screen and (max-width: 56.25em) {
-      .header__link {
-        padding: 3rem 1.8rem;
-        font-size: 1.5rem; } } 
 
 /*--------------------- footer--------------------- */
 
@@ -369,12 +407,6 @@ textarea {
   margin: 30px;
 }
 
-@media screen and (max-width: 56.25em) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-}
-
 .grid-item {
   background: var(--orange);
   color: #fafafa; 
@@ -395,8 +427,11 @@ textarea {
   object-fit: cover; 
 }
 
-/*------------------------------- grid overlay ----------------------------- */
+.skills {
+  background: var(--eggplant);
+}
 
+/* Grid overlay styles */
 .overlay {
   position: absolute;
   top: 0;
@@ -414,14 +449,11 @@ textarea {
   transition: opacity .5s ease;
 }
 
-
 .grid-item:hover .overlay {
-  display: flex;
-  text-align: center;
-  height: 100%;
   opacity: 1;
 }
 
+/* Project header styles */
 #project-header {
   font-size: 3.5vw;
   margin: .5rem auto 3rem auto;
@@ -430,41 +462,28 @@ textarea {
   font-weight: 800;
   margin-bottom: 5vh;
 }
-@media screen and (max-width: 56.25em) {
-  #project-header {
-    font-size: 7vw;
-    line-height: 3rem;
-    margin:  .5rem auto 1.5rem auto;
-  }
-}
 
-/*-------------------------------------- skills --------------------------------------- */
-
-.grid-item.skills {
-  background: var(--eggplant);
-}
-
+/* Skill list styles */
 .skills-list {
-  margin-top: 5vh;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px; 
+  gap: 17px; 
   justify-content: center;
 }
 
 .skill {
   background: var(--white);
   color: var(--brick);
-  padding: 2% 5%;
+  padding: 3% 7%;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-align: center;
   border: var(--grey) solid 4px;
   border-radius: 2px;
 }
 
-/*-------------------------------------- grocery-grid-item --------------------------------------- */
-
+/* Grocery item styles */
 .grocery-item {
   border: var(--grey) solid 1px;
 }
@@ -473,7 +492,16 @@ textarea {
   border: none;
 }
 
-/*----------------------- contact-grid-item --------------------- */
+/* Contact item styles */
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
 .grid-text-content {
   position: absolute;
   top: 50%;
@@ -484,58 +512,71 @@ textarea {
   width: 80%; 
 }
 
-.contact-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 30px;
-}
-
-.grid-item-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .grid-text-content h2 {
   font-size: 4.1vw;
   margin: -5rem auto 3rem auto;
   text-transform: uppercase;
 }
-@media screen and (max-width: 56.25em) {
-  .grid-text-content h2 {
-    font-size: 7vw;
-    margin:  -.5rem auto 1rem auto;
-  }
-}
+
 .grid-text-content p {
   font-size: 1.6vw;
   margin: auto;
   width: 95%;
-  /* text-align: justify; */
-}
-@media screen and (max-width: 56.25em) {
-  .grid-text-content p {
-    font-size: 2.5vw;
-    margin: auto;
-    width: 80%;
-  }
 }
 
 #contact-paragraph {
   margin-bottom: 7rem;
 }
+
+/* Responsive Grid Styles */
 @media screen and (max-width: 56.25em) {
-  #contact-paragraph {
-    margin-bottom: 5vh;
+  .grid-container {
+    grid-template-columns: 1fr;
   }
+
+  #project-header {
+    font-size: 7vw;
+    line-height: 4rem;
+    margin: .25rem auto 1.5rem auto;
+  }
+
+  .grid-text-content h2 {
+    font-size: 7vw;
+    margin: -.5rem auto 1rem auto;
+  }
+
+  .grid-text-content p {
+    font-size: 3.5vw;
+    margin: auto;
+    width: 95%;
+  }
+
+  #contact-paragraph {
+    margin-bottom: 4vh;
+  }
+
   #contact-header {
     margin: -2rem auto 1rem auto;
   }
 }
+
+@media only screen and (max-width: 25em) {
+  .skill {
+    background: var(--white);
+    color: var(--brick);
+    padding: 1.5% 4%;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    border: var(--grey) solid 4px;
+    border-radius: 2px;
+  }
+
+  .skill-list {
+    margin-top: -300px;
+  }
+}
+
 
 /*---------------------------- buttons ----------------------------*/
 .orange-btn {
@@ -549,9 +590,11 @@ textarea {
   padding: 5% 10%;
   text-transform: uppercase;
   transition: box-shadow 0.3s ease, color 0.3s ease;
-}.orange-btn:hover {
+}
+
+.orange-btn:hover {
   box-shadow: 0 25px 35px rgba(0,0,0,0.4);
-  ;}
+}
 
 .brick-btn {
   font-size: 1.75em;
@@ -562,15 +605,28 @@ textarea {
   font-weight: 800;
   padding: 5% 10%;
   transition: box-shadow 0.3s ease, color 0.3s ease;
-}.brick-btn:hover {
-  box-shadow: 0 25px 25px rgba(0,0,0,0.4);
-  ;
 }
 
+.brick-btn:hover {
+  box-shadow: 0 25px 25px rgba(0,0,0,0.4);
+}
+
+/* Responsive styles for medium screens */
 @media screen and (max-width: 56.25em) {
-  .orange-btn {
+  .orange-btn, .brick-btn {
     font-size: 1.5em;
     width: 60%;
     margin-top: 3.5vh;
+    padding: 4% 8%; /* Slightly reduced padding */
+  }
+}
+
+/* Further adjustments for smaller mobile devices */
+@media only screen and (max-width: 600px) {
+  .orange-btn, .brick-btn a.brick-btn> {
+    font-size: 1.4em; /* Slightly smaller font size */
+    width: 60%; /* Increased width for better touch accessibility */
+    padding: 5% 7%; /* Reduced padding */
+    margin-top: 2rem; /* Adjusted margin for smaller screens */
   }
 }

@@ -20,7 +20,7 @@ function MainSection() {
   };
 
   return (
-    <section>
+    <section  id="top">
       <div>
         <br /><br /><br />
         <p id="unique-p">

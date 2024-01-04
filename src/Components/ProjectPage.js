@@ -1,20 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import projectDataDetail from '../ProjectDataDetail';
 
 function ProjectPage() {
   const { projectId } = useParams();
   const project = projectDataDetail[projectId];
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  // Check if the project exists
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   if (!project) {
     return <div>Project not found</div>;
   }
 
-  // Helper function to render list of tools used
+  const imageUrl = windowWidth >= 768 ? project.imageUrl : project.mobileImageUrl;
+
   const renderToolsUsed = (tools) => {
     return tools.map((tool, index) => (
-      <li key={index}>{tool}</li> // Using index as a key, assuming tools can be non-unique
+      <li key={index}>{tool}</li> 
     ));
   };
 
@@ -26,7 +38,7 @@ function ProjectPage() {
       </section>
 
       <section className="project-details">
-        <img src={project.imageUrl} alt={`${project.title} Preview`} className="project-image" />
+        <img src={imageUrl} alt={`${project.title} Preview`} className="project-image" />
         <div className="project-info">
           <h2>Project Overview</h2>
           <p>{project.fullDescription}</p>
@@ -36,7 +48,7 @@ function ProjectPage() {
             {renderToolsUsed(project.toolsUsed)}
           </ul>
 
-        <h2>See Live</h2>
+          <h2>See Live</h2>
           <div className="project-links">
             <a href={project.liveProjectUrl} className="live-button" target="_blank" rel="noopener noreferrer">
               Live Link
