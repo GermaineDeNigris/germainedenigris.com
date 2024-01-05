@@ -52,7 +52,6 @@ function MainGrid() {
         <span className="skill">Node.js</span>
         <span className="skill">JQuery</span>
         <span className="skill">PostgreSQL</span>
-        <span className="skill">Web3</span>
         </div>
       </div>
   </div>
