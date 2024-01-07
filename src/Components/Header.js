@@ -5,38 +5,41 @@ function Header() {
   const navigate = useNavigate();
 
   const handleNavigation = (sectionId) => {
-  const scrollToSection = () => {
-    const section = document.getElementById(sectionId);
-    if (section) {
+    const scrollToSection = () => {
+      // Determine if the device is mobile
       const isMobile = window.innerWidth <= 768;
-      const headerOffset = isMobile ? 100 : 60;
-      let sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
 
-      // Check if it's a product page and set offsetPosition to 0
-      if (window.location.pathname.includes('product')) {
-        sectionPosition = 0;
-      } else {
-        sectionPosition -= headerOffset;
+      // If mobile and the clicked section is 'projects', change to 'mobile-projects'
+      if (isMobile && sectionId === 'projects') {
+        sectionId = 'mobile-projects';
       }
 
-      window.scrollTo({
-        top: sectionPosition,
-        behavior: 'smooth',
-      });
+      const section = document.getElementById(sectionId);
+      if (section) {
+        const headerOffset = isMobile ? 100 : 60;
+        let sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
+
+        if (window.location.pathname.includes('product')) {
+          sectionPosition = 0;
+        } else {
+          sectionPosition -= headerOffset;
+        }
+
+        window.scrollTo({
+          top: sectionPosition,
+          behavior: 'smooth',
+        });
+      }
+    };
+
+    if (window.location.pathname !== '/') {
+      navigate('/');
+      setTimeout(scrollToSection, 0); // Timeout to allow the page to load
+    } else {
+      scrollToSection();
     }
   };
 
-  if (window.location.pathname !== '/') {
-    navigate('/');
-    setTimeout(scrollToSection, 0); // Timeout to allow the page to load
-  } else {
-    scrollToSection();
-  }
-};
-
-  
-  
-   
 
   return (
     <header className="header">
