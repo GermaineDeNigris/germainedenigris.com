@@ -19,25 +19,54 @@ function MainGrid() {
   return (
     <div className="grid-container" >
 
-    {/* grid item 1 */}
+{/* grid item 1 */}
     <div className="grid-item" id="about">
         <img src={avatarImage} alt="Germaine's Avatar" className="centered-image" />
       </div>  
 
-   {/* grid item 2 */}
+{/* grid item 2 */}
     <div className="grid-item color-item">
         <div className="grid-text-content">
-          <h2>Get to know me</h2>
-          <p>My background is in product design and UI/UX. 
-            I have a masters degree in Fashion Technology from IFA Paris. 
-            This past year, I have been learning frontend development and recently completed Scrimba's Frontend Developer Bootcamp.
-            When I'm not coding, I am traveling the world with my camera or curled up at home with a good book.
+          <h2>About</h2>
+          <p>I’m a driven Frontend Developer with a background in product design. 
+            Equal parts designer and coder, I expertly meld Ul/UX design principles with clean 
+            code to create engaging user interfaces and memorable web experiences.
+          <br></br><br></br>
+          When I'm not coding, I am traveling the world with my camera or curled up at home with a good book.
           </p>
         </div>
       </div>
 
-    {/* grid item 3 */}
-    <div className="grid-item skills">
+      <div className=" mobile-projects-header">
+    <h2 id="project-header">Projects</h2>
+</div>      
+
+{/* grid item 3 */}
+<div className="grid-item project-item" id="projects">
+  <img src={dashboardImage} alt="Personal Dashboard preview" className="centered-image" />
+  <div className="overlay">
+    <div className="overlay-content grid-text-content">
+      <h2 id="project-header">Personal Dashboard</h2>
+      <p>A Chrome Extension that provides an overview of the current time, weather conditions, and Bitcoin performance. It interacts with multiple APIs using asynchronous JavaScript to deliver real-time data.</p>
+      <button className="orange-btn" onClick={() => navigateToProjectPage('personal-dashboard')}>Learn More</button>
+    </div>
+  </div>
+</div>
+
+{/* grid item 4 */}
+<div className="grid-item project-item grocery-item">
+  <img src={groceryListImage} alt="Grocery List preview" className="centered-image" />
+  <div className="overlay">
+    <div className="overlay-content grid-text-content">
+      <h2 id="project-header">Grocery List</h2>
+      <p>A simple and interactive grocery list application that allows users to add items to their shopping list, mark items as obtained, and manage their grocery needs efficiently.</p>
+      <button className="orange-btn" onClick={() => navigateToProjectPage('grocery-list')}>Learn More</button>
+    </div>
+  </div>
+</div>
+
+{/* grid item 5 */}
+<div className="grid-item skills">
       <div className="grid-text-content">
       <h2>My Skills</h2>
       <div className="skills-list">
@@ -55,37 +84,14 @@ function MainGrid() {
         </div>
       </div>
   </div>
-
-{/* grid item 4 */}
-<div className="grid-item project-item" id="projects">
-  <img src={dashboardImage} alt="Personal Dashboard preview" className="centered-image" />
-  <div className="overlay">
-    <div className="overlay-content grid-text-content">
-      <h2 id="project-header">Personal Dashboard</h2>
-      <p>A Chrome Extension that provides an overview of the current time, weather conditions, and Bitcoin performance. It interacts with multiple APIs using asynchronous JavaScript to deliver real-time data.</p>
-      <button className="orange-btn" onClick={() => navigateToProjectPage('personal-dashboard')}>Learn More</button>
-    </div>
-  </div>
-</div>
-
-{/* grid item 5 */}
-<div className="grid-item project-item grocery-item">
-  <img src={groceryListImage} alt="Grocery List preview" className="centered-image" />
-  <div className="overlay">
-    <div className="overlay-content grid-text-content">
-      <h2 id="project-header">Grocery List</h2>
-      <p>A simple and interactive grocery list application that allows users to add items to their shopping list, mark items as obtained, and manage their grocery needs efficiently.</p>
-      <button className="orange-btn" onClick={() => navigateToProjectPage('grocery-list')}>Learn More</button>
-    </div>
-  </div>
-</div>
     
-    {/* grid item 6 */}
+{/* grid item 6 */}
        <div className="grid-item" id="contact">
         <div className="grid-text-content">
           <h2 id="contact-header">Contact</h2>
-          <p id="contact-paragraph">Please reach out if you have any questions! I'm happy to jump on a video call to brainstorm projects and ideas. 
-            Send me an email at germainedenigris@gmail.com or call me directly at +33 07 49 21 33 45
+          <p id="contact-paragraph">If you consider me a good candidate for an open position, you’d like to discuss a freelance project 
+          or just want to say hello, feel free to send me an email at <strong>germainedenigris@gmail.com</strong> <br></br>or call me directly at  
+          <br></br><strong>+33 07 49 21 33 45</strong>
           </p>
           <a href="https://raw.githubusercontent.com/GermaineDeNigris/CV/main/GermaineDenigrisResume.pdf" download="GermaineDenigrisResume.pdf" className="brick-btn">DOWNLOAD CV</a>
         </div>
