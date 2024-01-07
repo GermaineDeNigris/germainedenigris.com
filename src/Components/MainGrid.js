@@ -37,12 +37,12 @@ function MainGrid() {
         </div>
       </div>
 
-      <div className=" mobile-projects-header">
+      <div className=" mobile-projects-header" id="projects"> 
     <h2 id="project-header">Projects</h2>
 </div>      
 
 {/* grid item 3 */}
-<div className="grid-item project-item" id="projects">
+<div className="grid-item project-item">
   <img src={dashboardImage} alt="Personal Dashboard preview" className="centered-image" />
   <div className="overlay">
     <div className="overlay-content grid-text-content">
