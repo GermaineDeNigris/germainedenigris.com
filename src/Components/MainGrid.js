@@ -89,8 +89,8 @@ function MainGrid() {
        <div className="grid-item" id="contact">
         <div className="grid-text-content">
           <h2 id="contact-header">Contact</h2>
-          <p id="contact-paragraph">If you consider me a good candidate for an open position, you’d like to discuss a freelance project 
-          or just want to say hello, feel free to send me an email at <strong>germainedenigris@gmail.com</strong> <br></br>or call me directly at  
+          <p id="contact-paragraph">If you consider me a good candidate for an open position, or you’d like to discuss a freelance project 
+          feel free to send me an email at <strong>germainedenigris@gmail.com</strong> <br></br>or call me directly at  
           <br></br><strong>+33 07 49 21 33 45</strong>
           </p>
           <a href="https://raw.githubusercontent.com/GermaineDeNigris/CV/main/GermaineDenigrisResume.pdf" download="GermaineDenigrisResume.pdf" className="brick-btn">DOWNLOAD CV</a>
