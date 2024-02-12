@@ -78,6 +78,10 @@ function MainGrid() {
         <span className="skill">Figma</span>
         <span className="skill">Firebase</span>
         <span className="skill">Git</span>
+        <span className="skill">Bootstrap</span>
+        <span className="skill">JQuery</span>
+        <span className="skill">Node.js</span>
+        <span className="skill">Express.js</span>
         </div>
       </div>
   </div>
