@@ -2,10 +2,10 @@ import dashboardLargeImage from "./assets/images/dashboard.large.png";
 import dashboardSmallImage from "./assets/images/dashboard.png";
 import groceryListLargeImage from "./assets/images/grocery-list.large.png";
 import groceryListSmallImage from "./assets/images/grocery-list.png";
-import kindCollectiveLargeImage from ".assets/images/kind-collective.large.png";
-import kindCollectiveSmallImage from ".assets/images/kind-collective.small.png";
-import pointifyLargeImage from ".assets/images/pointify.large.png";
-import pointifySmallImage from ".assets/images/pointify.small.png";
+import kindCollectiveLargeImage from "./assets/images/kind-collective.large.png";
+import kindCollectiveSmallImage from "./assets/images/kind-collective.png";
+import pointifyLargeImage from "./assets/images/pointify.large.png";
+import pointifySmallImage from "./assets/images/pointify.png";
 
 const projectDataDetail = {
   "personal-dashboard": {
@@ -40,7 +40,7 @@ const projectDataDetail = {
     shortDescription:
       "A bespoke website that marries custom coding with expressive design",
     fullDescription:
-      "From the seamless user interface to the dynamic content, the site stands as a testament to the harmonious blend of form and function. Envisioned as a canvas for creativity, it’s more than a website; it’s a journey through a curated experience designed to engage, inspire, and captivate the imaginative spirit of its visitors.Creating KindCollective.us involved a symphony of coding skills that brought its digital presence to life. Front-end development utilized HTML5 and CSS3 for structuring and styling, ensuring the site's design was both responsive and visually engaging. JavaScript and jQuery were implemented for dynamic interactivity, enhancing user experience with seamless navigation. For the back-end, we leveraged PHP for server-side scripting and MySQL for database management, providing a robust foundation. SEO optimization techniques were applied to improve visibility, and rigorous testing was conducted for cross-browser compatibility, ensuring accessibility for all users.",
+      "Creating KindCollective.us involved a symphony of coding skills that brought its digital presence to life. Front-end development utilized HTML5 and CSS3 for structuring and styling, ensuring the site's design was both responsive and visually engaging. JavaScript was implemented for dynamic interactivity, enhancing user experience with seamless navigation. From the seamless user interface to the dynamic content, the site stands as a testament to the harmonious blend of form and function. Envisioned as a canvas for creativity, it’s more than a website; it’s a journey through a curated experience designed to engage, inspire, and captivate the imaginative spirit of its visitors.",
     imageUrl: kindCollectiveLargeImage,
     mobileImageUrl: kindCollectiveSmallImage,
     liveProjectUrl: "https://kindcollective.us/",

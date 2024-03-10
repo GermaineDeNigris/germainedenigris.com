@@ -24,7 +24,7 @@ function MainSection() {
       <div>
         <br /><br /><br />
         <p id="unique-p">
-          I am a American frontend developer based in Paris, France. My specialities are <strong>React JS</strong> and <strong>CSS</strong>, and I love building apps that are beautiful and delightful to use.
+          I am a American frontend web developer based in Paris, France. My specialities are <strong>React JS</strong> and <strong>CSS</strong>, and I love building websites and apps that are beautiful and delightful to use.
         </p>
         <h1 id="unique-header">{splitText(word)}</h1>
       </div>

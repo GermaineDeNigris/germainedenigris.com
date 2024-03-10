@@ -2,6 +2,8 @@ import React from 'react';
 import dashboardImage from '../assets/images/dashboard.png'
 import avatarImage from '../assets/images/avatar.jpg'
 import groceryListImage from '../assets/images/grocery-list.png'
+import kindCollectiveSmallImage from "../assets/images/kind-collective.png";
+import pointifySmallImage from "../assets/images/pointify.png";
 import { useNavigate } from 'react-router-dom';
 
 function MainGrid() {
@@ -28,7 +30,7 @@ function MainGrid() {
     <div className="grid-item color-item">
         <div className="grid-text-content">
           <h2>About</h2>
-          <p>I’m a driven Frontend Developer with a background in product design. 
+          <p>I’m a driven Frontend Web Developer with a background in digital git aproduct design. 
             Equal parts designer and coder, I expertly meld Ul/UX design principles with clean 
             code to create engaging user interfaces and memorable web experiences.
           <br></br><br></br>
@@ -43,7 +45,7 @@ function MainGrid() {
 
 {/* grid item 3 */}
 <div className="grid-item project-item" id="projects">
-  <img src={dashboardImage} alt="Kind Collective preview" className="centered-image" />
+  <img src={kindCollectiveSmallImage} alt="Kind Collective preview" className="centered-image" />
   <div className="overlay">
     <div className="overlay-content grid-text-content">
       <h2 id="project-header">Kind Collective Website</h2>
@@ -55,7 +57,7 @@ function MainGrid() {
 
 {/* grid item 4 */}
 <div className="grid-item project-item" id="projects">
-  <img src={dashboardImage} alt="Pointify preview" className="centered-image" />
+  <img src={pointifySmallImage} alt="Pointify preview" className="centered-image" />
   <div className="overlay">
     <div className="overlay-content grid-text-content">
       <h2 id="project-header">Pointify Website</h2>
