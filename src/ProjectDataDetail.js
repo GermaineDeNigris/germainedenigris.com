@@ -40,7 +40,7 @@ const projectDataDetail = {
     shortDescription:
       "A bespoke website that marries custom coding with expressive design",
     fullDescription:
-      "Creating KindCollective.us involved a symphony of coding skills that brought its digital presence to life. Front-end development utilized HTML5 and CSS3 for structuring and styling, ensuring the site's design was both responsive and visually engaging. JavaScript was implemented for dynamic interactivity, enhancing user experience with seamless navigation. From the seamless user interface to the dynamic content, the site stands as a testament to the harmonious blend of form and function.",
+      "Creating kindcollective.us involved a symphony of coding skills that brought its digital presence to life. Front-end development utilized HTML5 and CSS3 for structuring and styling, ensuring the site's design was both responsive and visually engaging. JavaScript was implemented for dynamic interactivity, enhancing user experience with seamless navigation. From the seamless user interface to the dynamic content, the site stands as a testament to the harmonious blend of form and function.",
     imageUrl: kindCollectiveLargeImage,
     mobileImageUrl: kindCollectiveSmallImage,
     liveProjectUrl: "https://kindcollective.us/",
