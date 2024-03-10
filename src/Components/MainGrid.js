@@ -43,6 +43,30 @@ function MainGrid() {
 
 {/* grid item 3 */}
 <div className="grid-item project-item" id="projects">
+  <img src={dashboardImage} alt="Kind Collective preview" className="centered-image" />
+  <div className="overlay">
+    <div className="overlay-content grid-text-content">
+      <h2 id="project-header">Kind Collective Website</h2>
+      <p>A bespoke website that marries custom coding with expressive design.</p>
+      <button className="orange-btn" onClick={() => navigateToProjectPage('kind-collective')}>Learn More</button>
+    </div>
+  </div>
+</div>
+
+{/* grid item 4 */}
+<div className="grid-item project-item" id="projects">
+  <img src={dashboardImage} alt="Pointify preview" className="centered-image" />
+  <div className="overlay">
+    <div className="overlay-content grid-text-content">
+      <h2 id="project-header">Pointify Website</h2>
+      <p>A highly interactive and user-centric website for a web application focused on financial optimization through intelligent credit card selection for online purchases.</p>
+      <button className="orange-btn" onClick={() => navigateToProjectPage('pointify')}>Learn More</button>
+    </div>
+  </div>
+</div>
+
+{/* grid item 5 */}
+<div className="grid-item project-item" id="projects">
   <img src={dashboardImage} alt="Personal Dashboard preview" className="centered-image" />
   <div className="overlay">
     <div className="overlay-content grid-text-content">
@@ -53,7 +77,7 @@ function MainGrid() {
   </div>
 </div>
 
-{/* grid item 4 */}
+{/* grid item 6 */}
 <div className="grid-item project-item grocery-item">
   <img src={groceryListImage} alt="Grocery List preview" className="centered-image" />
   <div className="overlay">
@@ -65,11 +89,12 @@ function MainGrid() {
   </div>
 </div>
 
-{/* grid item 5 */}
+{/* grid item 7 */}
 <div className="grid-item skills">
       <div className="grid-text-content">
       <h2>My Skills</h2>
       <div className="skills-list">
+        <span className="skill">Wordpress</span>
         <span className="skill">HTML</span>
         <span className="skill">CSS</span>
         <span className="skill">JavaScript</span>
@@ -78,7 +103,6 @@ function MainGrid() {
         <span className="skill">Figma</span>
         <span className="skill">Firebase</span>
         <span className="skill">Git</span>
-        <span className="skill">Bootstrap</span>
         <span className="skill">JQuery</span>
         <span className="skill">Node.js</span>
         <span className="skill">Express.js</span>
@@ -86,7 +110,7 @@ function MainGrid() {
       </div>
   </div>
     
-{/* grid item 6 */}
+{/* grid item 8 */}
        <div className="grid-item" id="contact">
         <div className="grid-text-content">
           <h2 id="contact-header">Contact</h2>
