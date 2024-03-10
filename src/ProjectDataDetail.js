@@ -60,7 +60,7 @@ const projectDataDetail = {
     shortDescription:
       "A highly interactive and user-centric website for a web application focused on financial optimization through intelligent credit card selection for online purchases.",
     fullDescription:
-      "This website is a testament to meticulous design and coding expertise, utilizing React for dynamic user interactions, CSS animations for engaging visuals, and responsive design practices to ensure a seamless experience on any device.",
+      "This website is a testament to meticulous design and coding expertise, utilizing React for dynamic user interactions, CSS animations for engaging visuals, and responsive design practices to ensure a seamless experience on any device. I also worked on the branding for this site, creating copy, choosing fonts, company colors, and designing the logo. Additionally, I developed the UI/UX of the extension onboarding process. ",
     imageUrl: pointifyLargeImage,
     mobileImageUrl: pointifySmallImage,
     liveProjectUrl: "https://pointify-app.netlify.app/",
