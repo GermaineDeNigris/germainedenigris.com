@@ -30,7 +30,7 @@ function MainGrid() {
     <div className="grid-item color-item">
         <div className="grid-text-content">
           <h2>About</h2>
-          <p>I’m a driven Frontend Web Developer with a background in digital git aproduct design. 
+          <p>I’m a driven Frontend Web Developer with a background in digital product design. 
             Equal parts designer and coder, I expertly meld Ul/UX design principles with clean 
             code to create engaging user interfaces and memorable web experiences.
           <br></br><br></br>
